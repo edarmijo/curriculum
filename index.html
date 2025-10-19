@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Kimi2123">
+    <meta http-equiv="refresh" content="60">
+
+    <title>Mi Currículum Vitae</title>
+
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <link rel="icon" href="../asset/iconos/Mewtwo.ico">
+
+    <link rel="Stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="lora-letra">
+    
+    <header class="cabeceraPrincipal">
+        
+        <img class="imagen" src="asset/imagenes/fotoPresentacion.jpg" alt="logo perfil">
+                
+        <div class="cabeceraLinea">
+            <h1 class="cabeceraNombre"> Erick Danilo Armijos Romero</h1>
+            <span class="cabeceraOcupacion"> Estudiante de Computación</span>
+            <a class="cabeceraCorreo"  href="mailto:edarmijo@espol.edu.ec"> edarmijo@espol.edu.ec</a> 
+            <span class="cabeceraTelefono">097957561 </span>    
+        </div>
+
+    </header><br>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#resumen"> Resumen</a></li>
+            <li><a href="#experiencia"> Experiencia</a></li>
+            <li><a href="#educacion"> Educacion</a></li>
+            <li><a href="#habilidades"> Habilidades</a></li>
+            <li><a href="#proyectos"> Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id = "resumen">
+            <h2> Resumen </h2>
+            <container class="resumenContainer">
+                <p > Soy estudiante de la carrera de computacion en Espol (FIEC), actualemente estoy en mi <strong> sexto semestre </strong>.
+                    Me apasiona el <strong> desarrollo web</strong> y la <strong> creacion de videojuegos</strong>. Combino bases solidas de
+                    programacion, estructuras de datos y redes con proyectos academicos, estoy buscando oportunidades para aportar en equipos
+                    desafiantes mientras continuo aprendiendo y disfrutando nuevos conocimientos.
+                </p>
+                <p>
+                    <video class="videoClase" preload="metadata" width="320" height="240" controls>
+                        <source src="https://www.youtube.com/watch?v=EfhiOIHTmJg&t=143s" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+
+            </container>
+
+
+        </section>
+            
+        <section id="experiencia" >
+            <h2> Experiencia (Tecnologías) </h2>
+
+            <container class="experienciaContainer">
+                
+                <div class="experienciaDiv">
+                    <h3> Lenguajes </h3>
+                    <ul>
+                        <li> JavaScript, Java, Python, PHP, C, C#</li>
+                        <li> SQL (consultas, joins, funciones agregadas, etc)</li>
+                        <li> R(analisis basico de datos)</li>
+                    </ul>
+                </div>
+                <div class="experienciaDiv">
+                    <h3>Frameworks y librerías</h3>
+                    <ul> 
+                        <li> React, Vite, Tailwind CSS </li>
+                        <li> Leaflet (mapas web)</li>
+                        <li> Unity motor de videojuegos</li>
+                        <li> Git y GitHub</li>
+                        <li> Node.js </li>
+                    </ul>
+                </div>
+                <div class="experienciaDiv">
+                    <h3>Bases de datos</h3>
+                    <ul> 
+                        <li>MySQL (modelado relacional, claves, normalización básica)</li>
+                    </ul>
+                </div>
+                <div class="experienciaDiv">
+                    <h3>Herramientas y otros</h3>
+                    <ul>
+                        <li>Git y GitHub (ramas, pull requests)</li>
+                        <li>Linux (línea de comandos básica)</li>
+                        <li>Cisco Packet Tracer, Wireshark</li>
+                        <li> RStudio</li>
+                    </ul>
+                </div>
+
+            </container>
+        </section>
+
+        <section id="educacion">
+            <h2> Educacion </h2>
+
+            <container class="educacionContainer">
+                <div class="educacionDiv"> 
+                    <h3> ESPOL-FIEC (Facultad de Ingeniería en Electricidad y Computación) </h3>
+                    <p><strong>Programa: </strong> Ingeniería en Computación</p>
+                    <p><strong>Semestre: </strong> Sexto</p>
+                
+                    <p>
+                        <a href="https://www.espol.edu.ec/" target="_blank" rel="noopener">Sitio oficial de ESPOL</a> ·
+                        <a href="https://maps.app.goo.gl/2oZq3YF8mCim2mXbA" target="_blank" rel="noopener">Cómo llegar</a>
+                    </p>
+                </div>
+                <div>
+                    <div id="mapaEspol" aria-label="Mapa de ESPOL">                        
+                    </div>
+                </div>
+            </container>
+            
+        </section>
+
+        <section id="habilidades">
+            <h2> Habilidades </h2>
+            <container class="habilidadesContainer">
+                <div class="habilidadesDiv">
+                    <h3>Técnicas</h3>
+                    <ul>
+                        <li>Desarrollo web (HTML5, CSS3, JS, React, Vite)</li>
+                        <li>Consumo de APIs REST (fetch/axios), JSON</li>
+                        <li>Diseño básico de BD relacionales y SQL</li>
+                        <li>Control de versiones con Git (workflow con ramas)</li>
+                        <li>Contenedores (Docker) y scripting básico en Linux</li>
+                        <li>Mapas web con Leaflet; visualización de datos</li>
+                    </ul>
+                </div>
+                <div class="habilidadesDiv">
+                    <h3>Blandas</h3>
+                    <ul>
+                        <li>Trabajo en equipo y comunicación</li>
+                        <li>Resolución de problemas y pensamiento crítico</li>
+                        <li>Gestión del tiempo y organización</li>
+                        <li>Aprendizaje autónomo y adaptabilidad</li>
+                        <li>Orientación a resultados</li>
+                    </ul>
+                </div>
+            </container>
+        </section>
+
+        <section id="proyectos">
+
+            <h2> Proyectos </h2>
+            <article class="project">
+                <container class="proyectosContainer">
+                    <container>
+                        <div class="proyectosDiv">
+                            <a href="https://github.com/edarmijo/ecoAlerta.git" title="Ver repositorio en GitHub">
+                            <img class="imagenProyecto" src="asset/imagenes/ecoAlerta.jpg"  alt="Portada o captura del proyecto">
+                            </a>
+                        </div>
+                        <div class="proyectosDiv">
+                            <h3>ecoAlerta</h3>
+                            <p>
+                                Diseño y desarrollo de una aplicación web para reportar y visualizar problemas ambientales en la ciudad.
+                                El desempeño incluye el uso de TaildwindCSS, JavaScript, React y Leaflet para la creación de mapas interactivos.
+                                Desarolle la parte de registrar denuncias ambientales donde se hizo uso de un mapa interactivo ademas de uso de base de
+                                datos para almacenar la informacion del ingreso de datos realizado. 
+                                <a href="https://github.com/edarmijo/ecoAlerta.git" >Repositorio en GitHub</a>
+                            </p>
+                        </div>
+                    </container>      
+                     
+                    <div class="proyectosDiv">
+                            
+                        <p><strong> Te interesa algun proyecto o colaborar? Enviame un mensaje: </strong></p>
+
+                        <form id="contactoForm" novalidate>
+                            <div>
+                                <label for="nombre"> Nombre y Apellido:</label>
+                                <input id="nombre" name="mensaje" type="text" placeholder="Tu nombre"
+                                autocomplete="name" required>
+
+                            </div>
+                            <div>
+                                <label for="telefono"> Telefono:</label>
+                                <input id="telefono" name="telefono" type="tel" placeholder="Tu telefono"
+                                autocomplete="tel" required>
+                                    
+                            </div>
+                            <div>
+                                <label for="correo"> Correo:</label>
+                                <input id="correo" name="correo" type="email" placeholder="Tu email"
+                                autocomplete="email" required>
+                                    
+                            </div>
+                            <div>
+                                <label for="mensaje"> Comentario sobre el proyecto:</label>
+                                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuentame acerca de tu comentario o proyecto"
+                                required> </textarea>
+                                    
+                            </div>
+                            <button type="submit"> Enviar </button>
+
+                        </form>
+                    </div>
+                    
+                </container>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+    <container class="footerContainer"> 
+        <p>©Erick Danilo Armijos Romero-2025</p>
+        <ul>
+        <li><a
+        href="https://www.linkedin.com/in/ArmijosRomeroErickDanilo">LinkedIn</a></li>
+        <li><a href="https://github.com/edarmijo">GitHub</a></li>
+        </ul>
+    </container>
+</footer>
+<!-- Script del mapa (requiere darle altura al contenedor con CSS para verse) -->
+  <script>
+    // Coordenadas del Campus Gustavo Galindo (ESPOL)
+    const espol = [-2.1468, -79.9650];
+    const map = L.map('mapaEspol').setView(espol, 15);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+    L.marker(espol).addTo(map).bindPopup('ESPOL — Campus Gustavo Galindo');
+  </script>
+</body>
+
+
+</html>
